@@ -104,7 +104,7 @@ body{
   position: absolute;
   top: 0;
   left: 80px;
-  width: 520px;
+  width: 400px;
   height: 400px;
   background: linear-gradient(90deg, var(--clr), #df0d54);
   border-radius: 20px;
