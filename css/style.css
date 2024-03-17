@@ -1,0 +1,187 @@
+body{
+    margin: 0;padding: 0;
+    border: 1px solid rgb(255, 9, 234);
+    width: 100%;   
+}
+div{
+    /* border: 1px solid red; */
+}
+.block{
+    width: 100%;
+    min-width: 100%;
+    border: 1px solid yellow;
+}
+/* начальный блок */
+.header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../icon/logo.png');
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: 50% 40%;
+    background-color: #efefef;
+    border: 1px solid red;
+}
+.fit{
+    color: red;
+}
+/* блок краткой информации */
+.info{
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    /* font-size: 150%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid green;
+}
+.info h4{
+    font-size: 150%;
+}
+/* блок преимущества */
+.prime{
+    width: 100%;
+    /* height: 50vh; */
+    background-color: #efefef;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 10px; 
+    justify-items: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    border: 1px solid blue;
+}
+.content{
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    /* margin: 30px auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow:  17px 17px 34px #cccccc,
+             -17px -17px 34px #f4f4f4;
+}
+.prime h3{
+    position: absolute;
+    top: 125vh;
+}
+.primeSpan{
+    color: red;
+}
+.content div{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.c1{
+    background-image: url('../icon/1.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 10px 10px;
+}
+.c2{
+    background-image: url('../icon/2.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 10px 10px;
+}
+.c3{
+    background-image: url('../icon/3.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 10px 10px;
+}
+.c4{
+    background-image: url('../icon/4.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 10px 10px;
+}
+.content h4{
+    color: blue;
+    font-size: 20px;
+    margin-top: 90px;
+    width: 100%;
+}
+.content p{
+    margin-top: 30px;
+    width: 100%;
+}
+/* блок план */
+
+.plan{
+    width: 100%;
+    display: grid;
+    border: 1px solid red;
+}
+.headPlan{
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conPlan{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
+    /* gap: 0;  */
+    justify-items: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+.conPlan div{
+    width: 500px;
+    overflow: hidden;
+}
+.conPlan div img{
+    width: 100%;
+    height: auto;
+}
+.text{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+    align-content: space-evenly;
+}
+h5{
+    color: red;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.text p{
+    font-size: 20px;
+}
+@media screen and(max-width:500px) {
+    /* .block{
+        width: 100%;
+    } */
+    /* .conPlan div{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+    } */
+    div{
+        width: 100%;
+    }
+
+}
