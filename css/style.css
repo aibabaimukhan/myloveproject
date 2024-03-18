@@ -1,15 +1,12 @@
-body{
+*{
     margin: 0;padding: 0;
-    border: 1px solid rgb(255, 9, 234);
-    width: 100%;   
 }
-div{
-    /* border: 1px solid red; */
+body{
+    /* background-color: #d88b8b; */
 }
 .block{
     width: 100%;
-    min-width: 100%;
-/*     border: 1px solid yellow; */
+    /* border: 1px solid blue; */
 }
 /* начальный блок */
 .header{
@@ -22,31 +19,32 @@ div{
     background-image: url('../icon/logo.png');
     background-repeat: no-repeat;
     background-size: 150px;
-    background-position: 50% 40%;
+    background-position: 50% 35%;
     background-color: #efefef;
-/*     border: 1px solid red; */
+    /* border: 1px solid red; */
+    font-size: 1.5em;
+    /* font-size: 100%; */
 }
 .fit{
     color: red;
 }
-/* блок краткой информации */
 .info{
     width: 100%;
     height: 20vh;
     text-align: center;
-    /* font-size: 150%; */
+    font-size: 1.5em;
     display: flex;
     align-items: center;
     justify-content: center;
-/*     border: 1px solid green; */
+    /* border: 1px solid green; */
 }
 .info h4{
-    font-size: 150%;
+    margin: 10px;
 }
+
 /* блок преимущества */
 .prime{
     width: 100%;
-    /* height: 50vh; */
     background-color: #efefef;
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
@@ -55,13 +53,13 @@ div{
     align-items: center;
     padding-top: 100px;
     padding-bottom: 50px;
-/*     border: 1px solid blue; */
-}
+    /* border: 1px solid blue; */
+} 
 .content{
     width: 220px;
     height: 300px;
     border-radius: 10px;
-    /* margin: 30px auto; */
+    margin: 30px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,66 +120,83 @@ div{
 
 .plan{
     width: 100%;
-    display: grid;
-/*     border: 1px solid red; */
+    /* border: 1px solid red; */
+}
+.plan{
+    width: 100%;
 }
 .headPlan{
     width: 100%;
-    height: 200px;
-    /* border: 1px solid blue; */
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.headPlan p{
+    font-size: 100%;
+}
+.primeP{
+    font-weight: bold;
+}
+.primeP span{
+    color: red;
 }
 .conPlan{
     width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
-    /* gap: 0;  */
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 10px; 
     justify-items: center;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    justify-content: center;
 }
 .conPlan div{
-    width: 500px;
-    overflow: hidden;
+    width: 80%;
+    /* border: 1px solid red; */
 }
-.conPlan div img{
+.conPlan img{
     width: 100%;
-    height: auto;
 }
 .text{
-    height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* text-align: center; */
-    align-content: space-evenly;
+    text-align: center;
+    font-size: 25px;
 }
-h5{
+.text span{
     color: red;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-weight: bold;
 }
-.text p{
-    font-size: 20px;
-}
-@media screen and(max-width:500px) {
-    /* .block{
-        width: 100%;
-    } */
-    /* .conPlan div{
-        width: 100%;
-    }
-    .text{
-        width: 100%;
-    } */
-    div{
-        width: 100%;
-    }
 
+
+
+
+
+
+@media screen and (max-width: 850px) {
+    .text{
+        font-size: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .info{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 535px) {
+    .conPlan{
+        width: 100%;
+        font-size: 100%;
+    }
+    .conPlan div{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .header{
+        font-size: 1em;
+    }
+    .info{
+        font-size: 0.8em;
+    }
 }
